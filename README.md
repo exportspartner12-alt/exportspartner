@@ -1,0 +1,2 @@
+# exportspartner
+exports partner
