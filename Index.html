@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Exports Partner — Your Trusted Source for Quality Products | Mumbai, India</title>
+<meta name="description" content="Exports Partner — India-based sourcing & export service provider. 30+ years experience. Helping to Trade Globally!"/>
+<link rel="icon" href="logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<script>
+const LOGO_BASE64 = "";
+const LOGO_FILES=['logo.png','logo.jpg','logo.jpeg','logo.webp'];
+document.addEventListener('DOMContentLoaded',()=>{
+  const lList=LOGO_BASE64?[LOGO_BASE64,...LOGO_FILES]:LOGO_FILES;
+  if(LOGO_BASE64){const f=document.querySelector('link[rel="icon"]');if(f)f.href=LOGO_BASE64;}
+  document.querySelectorAll('img[data-logo]').forEach(img=>{
+    const fail=()=>{
+      const NS='http://www.w3.org/2000/svg';
+      const s=document.createElementNS(NS,'svg');
+      s.setAttribute('viewBox','0 0 240 240');
+      if(img.getAttribute('class'))s.setAttribute('class',img.getAttribute('class'));
+      const c=document.createElementNS(NS,'circle');
+      c.setAttribute('cx','120');c.setAttribute('cy','120');c.setAttribute('r','118');
+      c.setAttribute('fill','#fffdf4');c.setAttribute('stroke','#e8b923');c.setAttribute('stroke-width','6');
+      s.appendChild(c);img.replaceWith(s);
+    };
+    let i=0;img.src=lList[0];
+    img.addEventListener('error',()=>{i++;(i>=lList.length)?fail():img.src=lList[i];});
+  });
+});
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0b2447; --gold:#e8b923; --gold2:#f5c842; --goldd:#c99414;
+  --ink:#2b2410; --muted:#5a5340; --line:#d4e4f7; --tline:#c5d8ef;
+  --bg:#f8fbff; --cream:#eef6ff; --card:#fffef8;
+  --side-w:236px;
+  --shadow:0 2px 6px rgba(30,80,160,.07);
+  --blue:#2563eb;
+  --side-bg1:#ffe8f0; --side-bg2:#ffd6e4;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Poppins',sans-serif;color:var(--ink);background:var(--bg);font-size:1rem;line-height:1.4}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+::selection{background:var(--gold);color:var(--navy)}
+section[id]{scroll-margin-top:5px}
+
+/* ================= SIDEBAR — light blue ================= */
+.sidebar{position:fixed;inset:0 auto 0 0;width:var(--side-w);
+  background:linear-gradient(180deg,var(--side-bg1),var(--side-bg2));
+  border-right:2px solid #e8a0b8;
+  display:flex;flex-direction:column;z-index:900;overflow-y:auto;
+  transition:transform .35s ease}
+.sidebar::-webkit-scrollbar{width:3px}
+.sidebar::-webkit-scrollbar-thumb{background:#e8a0b8;border-radius:3px}
+.side-logo{text-align:center;padding:6px 4px 0}
+.side-logo img,.side-logo svg{width:180px;height:180px;object-fit:contain;border-radius:50%;
+  image-rendering:-webkit-optimize-contrast;
+  filter:drop-shadow(0 2px 6px rgba(30,80,160,.18))}
+.side-tag{text-align:center;padding:2px 5px 5px;border-bottom:1px solid #f0c0d0}
+.side-tag h2{font-size:1.05rem;letter-spacing:.04em;color:var(--navy);line-height:1.15}
+.side-tag h2 span{color:var(--goldd)}
+.side-tag .loc{font-size:.88rem;color:#8a4a6a;margin:1px 0 1px}
+.side-tag .tag1{font-size:.88rem;font-weight:700;color:var(--goldd);font-style:italic}
+.side-tag .tag2{font-size:.88rem;font-weight:600;color:var(--navy);font-style:italic}
+.side-nav{padding:3px 4px}
+.side-nav a{display:flex;align-items:center;gap:7px;padding:6px 9px;border-radius:6px;
+  font-size:.86rem;font-weight:500;color:#6a3a55;transition:.2s;border:1px solid transparent;line-height:1.25}
+.side-nav a i{width:18px;text-align:center;color:#c24a7a;font-size:.9rem;flex-shrink:0}
+.side-nav a:hover{background:#ffd0e0;color:var(--navy);transform:translateX(2px)}
+.side-nav a.active{background:rgba(194,74,122,.12);border-color:#e88aa8;color:var(--navy)}
+.side-contact{margin-top:auto;padding:5px 7px 8px;border-top:1px solid #f0c0d0}
+.side-contact h4{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#c24a7a;margin-bottom:3px}
+.c-btn{display:flex;align-items:center;gap:7px;background:#fff;border:1.5px solid #f0c0d0;
+  border-radius:6px;padding:5px 8px;margin-bottom:3px;font-size:.88rem;color:var(--navy);
+  font-weight:600;transition:.2s;line-height:1.2}
+.c-btn i{color:#c24a7a;width:16px;text-align:center;flex:none}
+.c-btn:hover{border-color:#e88aa8;background:#ffe0ec;transform:translateX(2px)}
+.c-hours{display:flex;align-items:center;gap:6px;margin-top:2px;font-size:.85rem;color:#8a4a6a}
+.c-hours i{color:#c24a7a}
+
+/* ================= MAIN ================= */
+.main{margin-left:var(--side-w);min-height:100vh}
+section{padding:6px 10px}
+.container{max-width:1120px;margin:0 auto}
+.kicker{display:inline-flex;align-items:center;gap:4px;background:#e8f4ff;color:#c24a7a;
+  font-weight:600;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;
+  padding:2px 10px;border-radius:50px;border:1px solid #b8d4ec}
+.sec-head{max-width:760px;margin:0 auto 4px;text-align:center}
+.sec-head h2{font-size:clamp(1.4rem,2.8vw,1.85rem);font-weight:700;color:var(--navy);margin:2px 0 1px}
+.sec-head h2 span{color:var(--goldd)}
+.sec-head p{color:var(--muted);font-size:.95rem;line-height:1.35}
+
+/* ============ HERO / MASTHEAD (table form) ============ */
+.brand-hero{padding:10px 10px 6px;
+  background:radial-gradient(880px 340px at 50% 18%,#fffbe0 0%,#fdeda2 55%,#fbe687 100%);
+  border-bottom:1px solid var(--line)}
+.mast-tbl{width:100%;max-width:1020px;margin:0 auto;border-collapse:collapse}
+.mast-tbl td{vertical-align:middle;padding:5px 10px}
+.mast-logo{width:190px;text-align:center}
+.mast-logo img{width:200px;height:200px;object-fit:contain;border-radius:50%;
+  background:#fff;box-shadow:0 4px 14px rgba(120,95,10,.22),0 0 0 4px rgba(255,255,255,.8);
+  image-rendering:-webkit-optimize-contrast}
+.mast-brand{text-align:left}
+.brand-name{font-size:clamp(1.65rem,3.6vw,2.45rem);font-weight:800;letter-spacing:.03em;line-height:1.05;
+  background-image:linear-gradient(90deg,#1d4ed8 0%,#0e9f6e 28%,#16a34a 45%,#dc2626 62%,#d97706 78%,#1d4ed8 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.brand-loc{font-size:1.08rem;font-weight:700;color:var(--blue);margin-top:3px}
+.mast-tags{text-align:right}
+.brand-t1{font-size:1.12rem;font-weight:800;line-height:1.25;
+  background-image:linear-gradient(90deg,#dc2626 0%,#16a34a 30%,#1d4ed8 60%,#d97706 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.brand-pill{display:inline-block;margin-top:5px;
+  background:linear-gradient(135deg,#facc15,#eab308);
+  border:1.5px solid #d9a520;border-radius:7px;
+  color:#1f2937;font-weight:800;font-size:1rem;
+  padding:4px 14px;box-shadow:0 2px 6px rgba(201,148,20,.18)}
+.mast-stats{text-align:center;padding:8px 4px 4px!important;font-size:.98rem;font-weight:600}
+.mast-stats b{font-size:1.25rem;font-weight:800}
+.mast-line{border:none;border-top:2.5px solid var(--goldd);margin:6px auto 4px;width:96%;display:block}
+.hero-stats{display:flex;max-width:820px;margin:4px auto 0;gap:4px}
+.hstat{flex:1;text-align:center;padding:2px 4px}
+.hstat .num{font-size:1.35rem;font-weight:800}
+.hstat .lbl{font-size:.88rem;font-weight:600;color:#3f3a2a}
+
+/* ---------- WHY STRIP ---------- */
+.strip{padding:3px 10px;border-bottom:1px solid var(--line)}
+.chips5{display:flex;flex-wrap:wrap;gap:4px;justify-content:center}
+.chip{display:inline-flex;align-items:center;gap:4px;background:#fff;border:1.5px solid var(--line);
+  padding:3px 11px;border-radius:50px;font-size:.92rem;font-weight:600;color:var(--navy);transition:.2s}
+.chip:hover{border-color:var(--gold);background:#fff3c4;transform:translateY(-1px)}
+
+/* ===== TABLES ===== */
+.tbl-wrap{border-radius:7px;box-shadow:var(--shadow);
+  border:1.5px solid var(--goldd);background:#fff;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.data{width:100%;border-collapse:collapse;background:#fff;table-layout:auto;min-width:480px}
+table.data th,table.data td{border:1px solid var(--tline);padding:5px 9px;text-align:left;
+  font-size:.95rem;vertical-align:top;line-height:1.35}
+table.data thead th{background:linear-gradient(135deg,var(--gold),var(--goldd));color:#122443;
+  font-size:.88rem;letter-spacing:.03em;text-transform:uppercase;font-weight:700;text-align:center}
+table.data tbody tr:nth-child(even){background:#f0f7ff}
+table.data tbody tr:hover{background:#e0efff;transition:.15s}
+.tbl-note{margin-top:2px;font-size:.88rem;color:var(--muted);text-align:center;font-style:italic}
+
+/* --- Who We Are --- */
+.about-tbl .a-sec{width:62%}
+.about-tbl .a-side{width:38%;background:#f0f7ff}
+.a-promise{font-style:italic;font-weight:600;color:var(--goldd);font-size:1.02rem;margin-bottom:3px}
+.about-tbl p{color:var(--muted);font-size:.95rem;margin-bottom:3px}
+.a-spec{font-size:1.02rem;font-weight:700;color:var(--navy);margin:4px 0 2px}
+.a-list li{display:flex;gap:6px;margin-bottom:2px;font-size:.95rem;color:#4a4128;line-height:1.35}
+.a-list i{color:var(--goldd);margin-top:4px;font-size:.85rem}
+.a-side .avatar{width:42px;height:42px;margin:0 auto 3px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),var(--goldd));display:grid;place-items:center;
+  font-size:1.1rem;color:#122443}
+.a-side h3{color:var(--navy);font-size:1.12rem;text-align:center}
+.a-side .role{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--goldd);text-align:center;margin:1px 0 3px}
+.a-side .creds{font-size:.9rem;color:var(--muted);line-height:1.35;border-top:1px dashed var(--line);
+  padding-top:4px}
+.a-side .exp{display:block;margin:4px auto 0;width:fit-content;background:var(--cream);
+  border:1px solid var(--line);border-radius:50px;padding:2px 10px;
+  font-size:.88rem;font-weight:700;color:var(--navy)}
+.a-side .exp b{color:var(--goldd)}
+.a-side .bio{font-size:.9rem;color:var(--muted);line-height:1.35;margin-top:3px}
+
+td.sn{width:48px;text-align:center;font-weight:700;color:var(--goldd)}
+td.cat{font-weight:600;color:var(--navy)}
+td.cat i{color:var(--goldd);margin-right:6px;width:16px;text-align:center}
+a.w-link{color:var(--goldd);font-weight:800}
+a.w-link:hover{text-decoration:underline}
+
+/* ---------- CATALOGUE ---------- */
+.filter-bar{display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-bottom:2px}
+.filter-bar input{flex:1;min-width:160px;padding:5px 12px;border:1.5px solid var(--line);
+  border-radius:50px;font-family:inherit;font-size:.95rem;background:#fff;outline:none;transition:.2s}
+.filter-bar input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(232,185,35,.15)}
+.filter-bar .count{background:var(--navy);color:var(--gold);font-weight:700;font-size:.9rem;
+  padding:4px 12px;border-radius:50px;white-space:nowrap}
+.hint{font-size:.88rem;color:var(--muted);text-align:center;margin-bottom:2px;font-style:italic}
+.hint b{color:var(--goldd)}
+#catTable tbody tr{cursor:pointer;transition:.15s}
+#catTable tbody tr:hover{background:#d6ebff}
+.custom-cta{margin-top:6px;background:#fff;border:2px solid #7eb8e8;border-radius:12px;
+  padding:14px 18px;text-align:center;box-shadow:0 2px 10px rgba(30,80,160,.08)}
+.custom-cta h3{color:#0b2447;font-size:1.1rem;font-weight:700;margin-bottom:4px}
+.custom-cta h3 i{color:#e8b923;margin-right:6px}
+.custom-cta p{color:#5a5340;font-size:.92rem;margin:0 auto 10px;max-width:640px;line-height:1.4}
+.custom-cta .btn{background:#2563eb;color:#fff;border-radius:8px;padding:8px 22px;font-size:.95rem}
+.custom-cta .btn:hover{background:#1d4ed8;transform:translateY(-1px)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:6px 16px;border-radius:6px;
+  font-weight:700;font-size:.95rem;transition:.25s;cursor:pointer;border:none;font-family:inherit}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{transform:translateY(-1px)}
+
+/* ---------- HOW WE WORK ---------- */
+.how-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:8px 0 12px}
+.how-step{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:12px 8px;
+  text-align:center;box-shadow:var(--shadow);transition:.2s;position:relative}
+.how-step:hover{transform:translateY(-2px);border-color:var(--gold);box-shadow:0 4px 12px rgba(30,80,160,.12)}
+.how-step .num{width:32px;height:32px;margin:0 auto 6px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),var(--goldd));color:#122443;
+  font-weight:800;font-size:1rem;display:grid;place-items:center}
+.how-step h4{color:var(--navy);font-size:.88rem;font-weight:700;margin-bottom:2px;line-height:1.25}
+.how-step p{color:var(--muted);font-size:.78rem;line-height:1.3;margin:0}
+.how-terms{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px}
+.term-card{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:14px 12px;
+  box-shadow:var(--shadow);transition:.2s}
+.term-card:hover{border-color:var(--gold);transform:translateY(-1px)}
+.term-card .ico{font-size:1.5rem;margin-bottom:6px;display:block}
+.term-card h4{color:var(--navy);font-size:.95rem;font-weight:700;margin-bottom:4px}
+.term-card p{color:var(--muted);font-size:.88rem;line-height:1.35;margin:0}
+.how-img-wrap{text-align:center;margin:8px 0 4px}
+.how-img-wrap img{max-width:100%;height:auto;border-radius:8px;border:1.5px solid var(--goldd);
+  box-shadow:var(--shadow)}
+
+/* ---------- WHY CARDS ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:4px}
+.why-card{background:#fff;border-radius:10px;padding:14px 12px;text-align:center;
+  box-shadow:0 2px 8px rgba(30,80,160,.07);border:1px solid #e0ecf8;transition:.2s}
+.why-card:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(30,80,160,.12)}
+.why-card .ico{font-size:1.6rem;margin-bottom:6px;display:block}
+.why-card h4{color:#0b2447;font-size:.95rem;font-weight:700;margin-bottom:3px;line-height:1.25}
+.why-card p{color:#5a5340;font-size:.82rem;line-height:1.3;margin:0}
+@media(max-width:1024px){.why-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .how-grid{grid-template-columns:repeat(3,1fr)}
+  .how-terms{grid-template-columns:1fr}}
+@media(max-width:500px){.why-grid{grid-template-columns:1fr;gap:6px}
+  .why-card{padding:12px 10px}.why-card h4{font-size:.9rem}.why-card p{font-size:.8rem}
+  .how-grid{grid-template-columns:1fr 1fr}}
+
+/* ---------- FOOTER LIGHT PINK ---------- */
+.site-footer{background:linear-gradient(180deg,#ffe8f0,#ffd6e4);color:#4a2a3a;padding:16px 12px;text-align:center;border-top:2px solid #e8a0b8}
+.site-footer .ft-brand{color:#0b2447;font-size:1.15rem;font-weight:700;margin-bottom:4px;display:flex;align-items:center;justify-content:center;gap:10px}
+.site-footer .ft-brand img{width:72px;height:72px;border-radius:50%;object-fit:contain;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.site-footer .ft-tag{font-size:.9rem;color:#6a3a55;margin-bottom:8px}
+.site-footer .ft-links{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;
+  font-size:.9rem;margin-bottom:8px}
+.site-footer .ft-links a{color:#0b2447;font-weight:500}
+.site-footer .ft-links a:hover{color:#c24a7a}
+.site-footer .ft-links i{margin-right:4px;color:#c24a7a}
+.site-footer .ft-slogan{color:#c99414;font-size:.88rem;font-weight:600}
+.site-footer .ft-copy{margin-top:6px;font-size:.78rem;color:#8a4a6a}
+
+/* Why table cards */
+.why-tbl{width:100%;border-collapse:separate;border-spacing:10px;table-layout:fixed}
+.why-tbl td{background:#fff;border:1px solid #e0ecf8;border-radius:10px;padding:14px 12px;
+  text-align:center;vertical-align:top;box-shadow:0 2px 8px rgba(30,80,160,.06)}
+.why-tbl td:hover{box-shadow:0 4px 12px rgba(30,80,160,.12);transform:translateY(-1px)}
+.why-tbl .w-ico{font-size:1.55rem;display:block;margin-bottom:6px}
+.why-tbl h4{color:#0b2447;font-size:.95rem;font-weight:700;margin:0 0 4px;line-height:1.25}
+.why-tbl p{color:#5a6a7a;font-size:.82rem;line-height:1.3;margin:0}
+@media(max-width:900px){
+  .why-tbl,.why-tbl tbody,.why-tbl tr,.why-tbl td{display:block;width:100%}
+  .why-tbl{border-spacing:0}
+  .why-tbl td{margin-bottom:8px}
+}
+
+/* ---------- CONTACT ---------- */
+.contact-stack{display:flex;flex-direction:column;gap:5px}
+a.c-lnk{transition:.15s}
+a.c-lnk:hover{color:var(--goldd)}
+td.method{font-weight:600;color:var(--navy);width:28%}
+td.method i{color:var(--goldd);margin-right:6px;width:16px;text-align:center}
+
+/* ----- ENQUIRY FORM ----- */
+.form-tbl{width:100%;border-collapse:collapse;background:#fff;min-width:0}
+.form-tbl td{border:1px solid var(--tline);padding:4px 8px;vertical-align:middle}
+.form-tbl td.lbl{width:28%;font-weight:600;color:var(--navy);font-size:.95rem;background:#f0f7ff}
+.form-tbl td.lbl i{color:var(--goldd);margin-right:6px;width:15px;text-align:center}
+.form-tbl input,.form-tbl textarea{width:100%;padding:5px 10px;border:1px solid #c5d8ef;
+  border-radius:5px;font-family:inherit;font-size:.95rem;color:var(--ink);background:#fff;
+  transition:.2s;outline:none;resize:vertical}
+.form-tbl input:focus,.form-tbl textarea:focus{border-color:var(--gold);
+  box-shadow:0 0 0 3px rgba(232,185,35,.15)}
+.form-actions{border:1px solid var(--tline);border-top:none;padding:5px;text-align:center;background:#f8fbff}
+.form-msg{display:none;margin-top:3px;background:#e8f7ee;border:1px solid #b6e2c8;color:#1d7a3e;
+  padding:5px 10px;border-radius:6px;font-size:.92rem}
+
+/* ===== FOOTER ===== */
+footer{padding:4px 10px 6px}
+.foot-tbl{width:100%;border-collapse:collapse}
+.foot-tbl th,.foot-tbl td{border:1px solid var(--tline);padding:5px 9px;text-align:center}
+.foot-tbl thead th{background:linear-gradient(135deg,var(--gold),var(--goldd));color:#122443;
+  font-size:1.1rem;letter-spacing:.03em;text-transform:uppercase;font-weight:800}
+.foot-tbl tbody td{background:#f8fbff;color:#4a4128;font-size:.95rem;font-weight:600}
+.foot-tbl tfoot td{background:#eef6ff;color:#5a5340;font-size:.88rem}
+
+/* ---------- REVEAL ---------- */
+.reveal{opacity:0;transform:translateY(6px);transition:opacity .3s ease,transform .3s ease}
+.reveal.visible{opacity:1;transform:none}
+.menu-btn{display:none;position:fixed;top:6px;left:6px;z-index:1400;width:40px;height:40px;
+  border-radius:7px;border:1.5px solid #e88aa8;background:#d46a90;color:#fff;
+  font-size:1rem;cursor:pointer;box-shadow:0 2px 6px rgba(30,80,160,.22)}
+.overlay{display:none;position:fixed;inset:0;background:rgba(20,40,70,.4);z-index:850;backdrop-filter:blur(2px)}
+
+/* ===== TABLET ===== */
+@media(max-width:1024px){
+  .sidebar{transform:translateX(-105%);width:250px}
+  .sidebar.open{transform:none}
+  .menu-btn{display:grid;place-items:center}
+  .overlay.show{display:block}
+  .main{margin-left:0}
+  section{padding:5px 7px}
+  .strip{padding:2px 7px}
+  .brand-hero{padding:6px 7px 4px}
+  .mast-tbl,.mast-tbl tbody,.mast-tbl tr,.mast-tbl td{display:block;width:100%}
+  .mast-logo{text-align:center;padding-bottom:6px;width:100%}
+  .mast-logo img{width:170px;height:170px}
+  .mast-brand,.mast-tags{text-align:center}
+  .brand-name{font-size:clamp(1.6rem,6vw,2.2rem)}
+  .brand-loc{font-size:1rem}
+  .brand-t1{font-size:1.05rem}
+  .brand-pill{font-size:.95rem;padding:2px 11px}
+  .mast-stats{font-size:.9rem}
+  .side-logo img,.side-logo svg{width:165px;height:165px}
+  .sec-head h2{font-size:clamp(1.25rem,3.5vw,1.6rem)}
+  .sec-head p{font-size:.9rem}
+  table.data{min-width:440px}
+  table.data th,table.data td{padding:4px 7px;font-size:.9rem}
+  .custom-cta{flex-direction:column;text-align:center}
+  .custom-cta h3{font-size:.98rem}
+  .custom-cta p{font-size:.88rem}
+  .btn{font-size:.9rem;padding:6px 14px}
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:760px){
+  body{font-size:.95rem}
+  section{padding:4px 5px}
+  .brand-hero{padding:5px 5px 3px}
+  .mast-logo img{width:160px;height:160px}
+  .hero-logo{width:160px;height:160px}
+  .brand-name{font-size:clamp(1.45rem,7vw,1.95rem)}
+  .brand-loc{font-size:.95rem}
+  .brand-t1{font-size:.98rem}
+  .brand-pill{font-size:.88rem;padding:2px 9px}
+  .hstat .num{font-size:1.25rem}
+  .hstat .lbl{font-size:.8rem}
+  .chip{font-size:.85rem;padding:2px 9px}
+  .kicker{font-size:.75rem;padding:2px 8px}
+  .sec-head h2{font-size:clamp(1.2rem,4.5vw,1.45rem)}
+  .sec-head p{font-size:.88rem}
+  .about-tbl .a-sec,.about-tbl .a-side{display:block;width:100%!important}
+  .about-tbl,.about-tbl tbody,.about-tbl tr{display:block}
+  .about-tbl thead{display:none}
+  .about-tbl .a-side{border-top:1px solid var(--tline);padding-top:5px;margin-top:3px}
+  .a-promise{font-size:.95rem}
+  .about-tbl p,.a-list li{font-size:.9rem}
+  .a-spec{font-size:.95rem}
+  .a-side h3{font-size:1.05rem}
+  .a-side .creds,.a-side .bio{font-size:.88rem}
+  table.data{min-width:0;display:block}
+  table.data thead{display:none}
+  table.data tbody,table.data tr,table.data td{display:block;width:100%}
+  table.data tr{border:1px solid var(--tline);border-radius:6px;margin-bottom:4px;padding:3px 0;background:#fff}
+  table.data tbody tr:nth-child(even){background:#f0f7ff}
+  table.data td{border:none;border-bottom:1px solid #eef4fb;padding:3px 9px;font-size:.9rem}
+  table.data td:last-child{border-bottom:none}
+  table.data td.sn{font-size:.85rem;padding-bottom:0}
+  table.data td.cat{font-size:.95rem;padding-top:1px}
+  table.data td::before{display:block;font-size:.72rem;font-weight:700;color:#c24a7a;text-transform:uppercase;letter-spacing:.03em;margin-bottom:1px}
+  #catTable td:nth-child(2)::before{content:"Category"}
+  #catTable td:nth-child(3)::before{content:"Products"}
+  #catTable td:nth-child(4)::before{content:"Application"}
+  #catTable td:nth-child(5)::before{content:"Industry"}
+  #catTable td.sn::before{content:none}
+  .filter-bar input{font-size:.9rem;min-width:120px;padding:5px 10px}
+  .filter-bar .count{font-size:.85rem;padding:3px 9px}
+  .hint{font-size:.82rem}
+  .custom-cta h3{font-size:.95rem}
+  .custom-cta p{font-size:.85rem}
+  .btn{font-size:.9rem;width:100%;justify-content:center}
+  .form-tbl,.form-tbl tbody,.form-tbl tr,.form-tbl td{display:block;width:100%}
+  .form-tbl thead{display:none}
+  .form-tbl td.lbl{width:100%;background:#e8f4ff;padding:3px 9px 1px;border-bottom:none;font-size:.9rem}
+  .form-tbl td:not(.lbl){padding:2px 9px 5px;border-top:none}
+  .form-tbl input,.form-tbl textarea{font-size:.9rem;padding:5px 9px}
+  td.method{width:100%}
+  .foot-tbl thead th{font-size:.95rem}
+  .foot-tbl tbody td{font-size:.88rem}
+  .foot-tbl tfoot td{font-size:.82rem}
+  .side-nav a{font-size:.95rem;padding:7px 10px}
+  .c-btn{font-size:.88rem}
+  .side-logo img,.side-logo svg{width:155px;height:155px}
+  .how-grid{grid-template-columns:1fr}
+  .how-terms{grid-template-columns:1fr}
+}
+
+/* ===== SMALL PHONES ===== */
+@media(max-width:400px){
+  .mast-logo img{width:145px;height:145px}
+  .hero-logo{width:145px;height:145px}
+  .brand-name{font-size:1.35rem}
+  .brand-loc,.brand-t1{font-size:.9rem}
+  .brand-pill{font-size:.82rem}
+  .chip{font-size:.8rem;padding:2px 7px}
+  .hstat .num{font-size:1.15rem}
+  .hstat .lbl{font-size:.75rem}
+}
+</style>
+</head>
+<body>
+
+<button class="menu-btn" id="menuBtn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+<div class="overlay" id="overlay"></div>
+
+<!-- ==================== SIDEBAR ==================== -->
+<aside class="sidebar" id="sidebar">
+  <div class="side-logo"><img data-logo src="logo.png" alt="Exports Partner Logo"></div>
+  <div class="side-tag">
+    <h2>EXPORTS PARTNER</h2>
+    <p class="loc">📍 Mumbai, India</p>
+    <p class="tag1">"Helping to Trade Globally !"</p>
+    <p class="tag2">"You need it ! We Deliver it !"</p>
+  </div>
+
+  <nav class="side-nav" id="sideNav">
+    <a href="#home" class="active"><i class="fas fa-house"></i> Home</a>
+    <a href="#about"><i class="fas fa-users"></i> About Us</a>
+    <a href="#products"><i class="fas fa-boxes-stacked"></i> Products We Source &amp; Supply</a>
+    <a href="#industries"><i class="fas fa-industry"></i> Industries We Serve</a>
+    <a href="#how-we-work"><i class="fas fa-cogs"></i> How We Work &amp; Trade Terms</a>
+    <a href="#why"><i class="fas fa-award"></i> Why Choose Exports Partner?</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+  </nav>
+
+  <div class="side-contact">
+    <h4>Contact Info</h4>
+    <p style="font-weight:700;color:var(--navy);font-size:.92rem;margin-bottom:2px">EXPORTS PARTNER</p>
+    <p class="loc" style="margin-bottom:4px">📍 Mumbai, India</p>
+    <a class="c-btn" href="https://wa.me/919869652350" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i><span>WhatsApp / Mobile<br>+91 9869 652 350</span></a>
+    <a class="c-btn" href="mailto:info@exportspartner.com">
+      <i class="fas fa-envelope"></i><span>info@exportspartner.com</span></a>
+    <a class="c-btn" href="https://www.exportspartner.com" target="_blank" rel="noopener">
+      <i class="fas fa-globe"></i><span>www.exportspartner.com</span></a>
+    <p class="c-hours"><i class="fas fa-clock"></i> Mon – Sat : 10 AM – 6 PM</p>
+  </div>
+</aside>
+
+<!-- ==================== MAIN — hero is the top letterhead / Masthead ==================== -->
+<main class="main">
+
+  <!-- ===== TOP LETTERHEAD / MASTHEAD (Table Form) ===== -->
+  <section class="brand-hero" id="home">
+    <table class="mast-tbl">
+      <tr>
+        <td class="mast-logo" rowspan="2">
+          <img data-logo src="logo.png" alt="Exports Partner Logo">
+        </td>
+        <td class="mast-brand">
+          <h1 class="brand-name">EXPORTS PARTNER</h1>
+          <p class="brand-loc">Mumbai, India</p>
+        </td>
+        <td class="mast-tags">
+          <p class="brand-t1">Helping to Trade Globally !</p>
+          <span class="brand-pill">You need it ! We Deliver it !</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="mast-stats">
+          <b style="color:#f97316">30+</b> Years Experience &nbsp;:&nbsp;
+          <b style="color:#2563eb">Reliable</b> Supplier Network &nbsp;:&nbsp;
+          <b style="color:#9333ea">Global</b> Export Reach
+        </td>
+      </tr>
+    </table>
+    <hr class="mast-line">
+  </section>
+
+  <!-- ===== WHO WE ARE ===== -->
+  <section id="about" style="background:var(--cream)">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="kicker"><i class="fas fa-users"></i> Who We Are</span>
+        <h2>About <span>Us</span></h2>
+      </div>
+      <div class="tbl-wrap reveal">
+        <table class="data about-tbl">
+          <thead>
+            <tr><th colspan="2">Who We Are · Thirty Years of Kept Promises</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="a-sec">
+                <div class="a-promise">"Thirty years of kept promises."</div>
+                <p>Exports Partner is a professional India-based sourcing and export service provider
+                   dedicated to helping overseas buyers procure products from reliable Indian suppliers.
+                   A Mumbai-based sourcing and trading house with <b>30+ years of experience</b>, a reliable
+                   supplier network and a global export reach.</p>
+                <p>Quality products are backed with <b>lab certification</b>, offered at the <b>best prices</b>,
+                   and sampling is offered before you commit to volume. Business terms run on
+                   <b>Bank L/C &amp; Escrow payment thru bank</b> — and global delivery moves via
+                   <b>air cargo, ocean ship &amp; air courier</b>.</p>
+                <div class="a-spec">✅ What We Specialize In</div>
+                <ul class="a-list">
+                  <li><i class="fas fa-circle-check"></i> Product sourcing from verified manufacturers</li>
+                  <li><i class="fas fa-circle-check"></i> Factory coordination &amp; negotiations</li>
+                  <li><i class="fas fa-circle-check"></i> Quality inspection &amp; packaging supervision</li>
+                  <li><i class="fas fa-circle-check"></i> Export documentation &amp; shipment handling</li>
+                  <li><i class="fas fa-circle-check"></i> Complete order fulfillment support</li>
+                </ul>
+              </td>
+              <td class="a-side">
+                <div class="avatar"><i class="fas fa-user-tie"></i></div>
+                <h3>Mr. Farukh Shaikh</h3>
+                <div class="role">Leadership</div>
+                <div class="creds">B.Com (Mumbai University)<br>
+                  Diploma in EXIM — Indian Merchant Chamber of Commerce &amp; Industry, Mumbai</div>
+                <span class="exp"><b>30+ years</b> of expertise in global trade</span>
+                <p class="bio">An experienced export professional committed to delivering seamless
+                  sourcing solutions for international buyers.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section id="products" style="background:var(--cream)">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="kicker"><i class="fas fa-boxes-stacked"></i> Product Index · Lab-Certified Lines</span>
+        <h2>Products We <span>Source &amp; Supply</span></h2>
+        <p>A wide portfolio across multiple industries — single product or complete basket supply,
+           delivered as per your requirements.</p>
+      </div>
+
+      <div class="filter-bar reveal">
+        <input type="text" id="catFilter" placeholder='🔍 Filter — try "pigment", "valve", "rope"…'>
+        <span class="count" id="catCount">7 / 7</span>
+      </div>
+      <p class="hint" style="color:#2563eb;font-weight:700">👆 <b>Select any row</b> — a pre-filled WhatsApp enquiry opens for that line · Press <b>/</b> to filter</p>
+
+      <div class="tbl-wrap reveal">
+        <table class="data" id="catTable">
+          <thead>
+            <tr>
+              <th style="width:58px">S.No</th>
+              <th style="width:16%">Product Category</th>
+              <th style="width:32%">Product Name</th>
+              <th style="width:24%">Application</th>
+              <th style="width:22%">Industry</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="sn">1</td><td class="cat">Pigments</td>
+                <td>All Type of Pigments :Powder &amp; Paste, Emulsion, Organic/Inorganic, Phthalocyanine, Ultra Marine Blue,Anti-Corrosve,and Flourescent Pigments .</td>
+                <td>Coloration and protective coatings</td>
+                <td>Paints, Plastics, Printing Inks, PP/PE/Plastics,Masterbatch,Rubber, and Textiles.</td></tr>
+            <tr><td class="sn">2</td><td class="cat">Chemical Raw Materials</td>
+                <td>Caustic Soda, LABSA, Soda Ash, Sodium Silicate, Surfactants</td>
+                <td>Base manufacturing &amp; cleaning</td>
+                <td>Detergents, Soaps, Laundry</td></tr>
+            <tr><td class="sn">3</td><td class="cat">Paint Raw Materials</td>
+                <td>Titanium Dioxide, Epoxy Resin, Alkyd Resin, Defoamer, Iron Oxide, Paint</td>
+                <td>Hiding power, binding &amp; tint control</td>
+                <td>Paint &amp; Coatings</td></tr>
+            <tr><td class="sn">4</td><td class="cat">Soap &amp; Detergent</td>
+                <td>Soap Noodles, Acid Slurry, SLES, SLS Needles, Optical Brighteners</td>
+                <td>Surfactants &amp; cleaning formulations</td>
+                <td>Soap, Detergent, Personal Care</td></tr>
+            <tr><td class="sn">5</td><td class="cat">Construction Products</td>
+                <td>Hardware Items, Nylon/PP/PE Ropes, Jute Bags, Safety Nets</td>
+                <td>Binding, lifting &amp; safety</td>
+                <td>Construction, Logistics</td></tr>
+            <tr><td class="sn">6</td><td class="cat">Ship Spares</td>
+                <td>Ship Compressor Spares/Parts, Marine Valves, Life Jackets</td>
+                <td>Vessel maintenance &amp; marine safety</td>
+                <td>Marine,Industrial,Ships.</td></tr>
+            <tr><td class="sn">7</td><td class="cat">Industrial Hardware</td>
+                <td>Fasteners, Ball Valves, Gaskets, Power Tools</td>
+                <td>Mechanical assembly &amp; repair</td>
+                <td>Engineering, Manufacturing</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="tbl-note" style="color:#2563eb;font-weight:700">Click any row to open a pre-filled WhatsApp enquiry for that product line.</p>
+
+      <div class="custom-cta reveal">
+        <h3><i class="fas fa-handshake"></i> Custom Sourcing — As Per Buyer Requirements</h3>
+        <p>We source, supply &amp; ship products as per buyer requirements. Share your requirement so that tailored quotes and samples can be offered.</p>
+        <a href="#contact" class="btn">Send Your Requirement →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INDUSTRIES ===== -->
+  <section id="industries">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="kicker"><i class="fas fa-industry"></i> Sectors</span>
+        <h2>Industries We <span>Serve</span></h2>
+        <p>We proudly cater to a diverse range of industries worldwide.</p>
+      </div>
+      <div class="tbl-wrap reveal">
+        <table class="data">
+          <thead>
+            <tr>
+              <th style="width:64px">S.No</th>
+              <th style="width:40%">Products</th>
+              <th>Industry</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="sn">1</td><td class="cat">Pigments</td>
+                <td>Paints, Plastics, Printing Inks, PP/PE/Plastics,Masterbatch,Rubber, and Textiles.</td></tr>
+            <tr><td class="sn">2</td><td class="cat">Chemical Raw Materials</td>
+                <td>Detergents, Soaps, Laundry</td></tr>
+            <tr><td class="sn">3</td><td class="cat">Paint Raw Materials</td>
+                <td>Paint &amp; Coatings</td></tr>
+            <tr><td class="sn">4</td><td class="cat">Soap &amp; Detergent</td>
+                <td>Soap, Detergent, Personal Care</td></tr>
+            <tr><td class="sn">5</td><td class="cat">Construction Products</td>
+                <td>Construction, Logistics</td></tr>
+            <tr><td class="sn">6</td><td class="cat">Ship Spares</td>
+                <td>Marine,Industrial,Ships.</td></tr>
+            <tr><td class="sn">7</td><td class="cat">Industrial Hardware</td>
+                <td>Engineering, Manufacturing</td></tr>
+            <tr><td class="sn">➕</td><td colspan="2" style="text-align:center;font-weight:700;color:#2563eb">
+                …And Many More — Don't see your industry?
+                <a class="c-lnk" href="#contact" style="color:#2563eb;font-weight:700">Contact us</a> — we source on request.
+              </td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW WE WORK & TRADE TERMS (table form, below Industries) ===== -->
+  <section id="how-we-work" style="background:var(--cream)">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="kicker"><i class="fas fa-cogs"></i> Process &amp; Terms</span>
+        <h2>How We Work <span>&amp; Trade Terms</span></h2>
+        <p>Clear process, secure payment, reliable shipping and quality assurance on every order.</p>
+      </div>
+
+      <div class="tbl-wrap reveal">
+        <table class="data">
+          <thead>
+            <tr>
+              <th style="width:22%">Item</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cat"><i class="fas fa-list-ol"></i> Process</td>
+              <td>
+                <b>①</b> Share your requirement &nbsp;→&nbsp;
+                <b>②</b> Sourcing &amp; negotiation &nbsp;→&nbsp;
+                <b>③</b> Sampling &amp; approval &nbsp;→&nbsp;
+                <b>④</b> Quality inspection &amp; documentation &nbsp;→&nbsp;
+                <b>⑤</b> Shipping &amp; delivery
+              </td>
+            </tr>
+            <tr>
+              <td class="cat"><i class="fas fa-credit-card"></i> Payment</td>
+              <td>Bank L/C &amp; Escrow payment through bank — secure for both parties.</td>
+            </tr>
+            <tr>
+              <td class="cat"><i class="fas fa-ship"></i> Shipping</td>
+              <td>Air cargo, ocean ship (FCL &amp; LCL) and air courier, tracked until delivery.</td>
+            </tr>
+            <tr>
+              <td class="cat"><i class="fas fa-certificate"></i> Quality</td>
+              <td>Lab certification (COA) available; pre-shipment inspection on every order.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE ===== -->
+  <section id="why">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="kicker"><i class="fas fa-award"></i> Our Strength</span>
+        <h2>Why Choose <span>Exports Partner?</span></h2>
+      </div>
+      <div class="tbl-wrap reveal">
+        <table class="data why-data-tbl">
+          <thead>
+            <tr><th colspan="4">Why Choose Exports Partner?</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align:center;width:25%">
+                <div style="font-size:1.4rem;margin-bottom:4px">🏭</div>
+                <b>Trusted Quality Manufacturers</b><br>
+                <span style="color:var(--muted);font-size:.9em">We work only with verified, reliable suppliers</span>
+              </td>
+              <td style="text-align:center;width:25%">
+                <div style="font-size:1.4rem;margin-bottom:4px">💰</div>
+                <b>Competitive Prices</b><br>
+                <span style="color:var(--muted);font-size:.9em">Best value sourcing from India</span>
+              </td>
+              <td style="text-align:center;width:25%">
+                <div style="font-size:1.4rem;margin-bottom:4px">✅</div>
+                <b>Consistent Quality</b><br>
+                <span style="color:var(--muted);font-size:.9em">Quality inspection on every order</span>
+              </td>
+              <td style="text-align:center;width:25%">
+                <div style="font-size:1.4rem;margin-bottom:4px">🎧</div>
+                <b>Technical Support</b><br>
+                <span style="color:var(--muted);font-size:.9em">Expert guidance throughout your order</span>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align:center">
+                <div style="font-size:1.4rem;margin-bottom:4px">🌍</div>
+                <b>Global Export Experience</b><br>
+                <span style="color:var(--muted);font-size:.9em">30+ years in international trade</span>
+              </td>
+              <td style="text-align:center">
+                <div style="font-size:1.4rem;margin-bottom:4px">📦</div>
+                <b>Flexible Packaging</b><br>
+                <span style="color:var(--muted);font-size:.9em">Packaging tailored to your needs</span>
+              </td>
+              <td style="text-align:center">
+                <div style="font-size:1.4rem;margin-bottom:4px">🚢</div>
+                <b>FCL &amp; LCL Shipments</b><br>
+                <span style="color:var(--muted);font-size:.9em">Full container &amp; less-than-container loads</span>
+              </td>
+              <td style="text-align:center">
+                <div style="font-size:1.4rem;margin-bottom:4px">🧺</div>
+                <b>Single Product or Complete Basket</b><br>
+                <span style="color:var(--muted);font-size:.9em">One-stop sourcing solution</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="kicker" style="color:#2563eb;font-weight:700;border-color:#2563eb"><i class="fas fa-envelope"></i> Get In Touch</span>
+        <h2>Contact <span>Exports Partner</span></h2>
+        <p style="color:#2563eb;font-weight:700">Get in touch for quotes, samples &amp; inquiries.</p>
+      </div>
+
+      <div class="contact-stack">
+        <div class="tbl-wrap reveal">
+          <table class="data">
+            <thead><tr><th colspan="2">Contact Exports Partner</th></tr></thead>
+            <tbody>
+              <tr><td class="method"><i class="fab fa-whatsapp"></i>WhatsApp / Mobile</td>
+                  <td><a class="c-lnk" href="https://wa.me/919869652350" target="_blank" rel="noopener"
+                         style="color:var(--goldd);font-weight:700">+91 9869 652 350</a></td></tr>
+              <tr><td class="method"><i class="fas fa-envelope"></i>Email</td>
+                  <td><a class="c-lnk" href="mailto:info@exportspartner.com"
+                         style="color:var(--goldd);font-weight:700">info@exportspartner.com</a></td></tr>
+              <tr><td class="method"><i class="fas fa-globe"></i>Website</td>
+                  <td><a class="c-lnk" href="https://www.exportspartner.com" target="_blank" rel="noopener"
+                         style="color:var(--goldd);font-weight:700">www.exportspartner.com</a></td></tr>
+              <tr><td class="method"><i class="fas fa-location-dot"></i>Location</td>
+                  <td>Mumbai, India</td></tr>
+              <tr><td class="method"><i class="fas fa-clock"></i>Hours</td>
+                  <td>Mon – Sat : 10 AM – 6 PM IST</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <form id="contactForm" class="reveal" action="mailto:info@exportspartner.com" method="POST" enctype="text/plain">
+          <div class="tbl-wrap" style="box-shadow:none">
+            <table class="form-tbl">
+              <thead><tr><th colspan="2" style="font-weight:800;color:#2563eb !important;background:linear-gradient(135deg,#e0efff,#c5d8ef)">Send Your Inquiry</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td class="lbl"><i class="fas fa-user"></i>Name *</td>
+                  <td><input type="text" name="name" id="fName" required placeholder="Your name"></td></tr>
+                <tr>
+                  <td class="lbl"><i class="fas fa-building"></i>Company Name</td>
+                  <td><input type="text" name="company" id="fCompany" placeholder="Your company"></td></tr>
+                <tr>
+                  <td class="lbl"><i class="fas fa-earth-asia"></i>Country *</td>
+                  <td><input type="text" name="country" id="fCountry" required placeholder="Your country"></td></tr>
+                <tr>
+                  <td class="lbl"><i class="fas fa-envelope"></i>Email *</td>
+                  <td><input type="email" name="email" id="fEmail" required placeholder="you@company.com"></td></tr>
+                <tr>
+                  <td class="lbl"><i class="fab fa-whatsapp"></i>WhatsApp / Mobile *</td>
+                  <td><input type="tel" name="phone" id="fPhone" required placeholder="+91 9869..."></td></tr>
+                <tr>
+                  <td class="lbl"><i class="fas fa-boxes-stacked"></i>Product(s) Required *</td>
+                  <td><input type="text" name="products" id="fProducts" required placeholder="e.g. Titanium Dioxide, Ropes…"></td></tr>
+                <tr>
+                  <td class="lbl"><i class="fas fa-pen"></i>Quantity / Details</td>
+                  <td><textarea name="details" id="fDetails" rows="2" placeholder="Quantity, packing, destination port, target price…"></textarea></td></tr>
+              </tbody>
+            </table>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-navy" style="width:100%;justify-content:center">
+                <i class="fas fa-paper-plane"></i> Submit Inquiry</button>
+            </div>
+          </div>
+          <div class="form-msg" id="formMsg">
+            ✅ Thank you! Your inquiry has been received.<br>
+            Alerts sent to <b>+91 9869 652 350</b> (WhatsApp / SMS) and <b>info@exportspartner.com</b> (Email).<br>
+            We will contact you shortly.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="ft-brand">
+    <img data-logo src="logo.png" alt="Exports Partner Logo">
+    EXPORTS PARTNER — Mumbai, India
+  </div>
+  <div class="ft-tag">Your Trusted Partner for Quality Products Sourcing and Supplies</div>
+  <div class="ft-links">
+    <a href="https://wa.me/919869652350" target="_blank" rel="noopener"><i class="fas fa-phone"></i>+91 9869 652 350</a>
+    <span>|</span>
+    <a href="mailto:info@exportspartner.com"><i class="fas fa-envelope"></i>info@exportspartner.com</a>
+    <span>|</span>
+    <a href="https://www.exportspartner.com" target="_blank" rel="noopener"><i class="fas fa-globe"></i>www.exportspartner.com</a>
+  </div>
+  <div class="ft-slogan">★ Helping to Trade Globally — You Need It… We Deliver It! ★</div>
+  <div class="ft-copy">© 2025 Exports Partner. All Rights Reserved.</div>
+</footer>
+
+<script>
+const sidebar=document.getElementById('sidebar'),
+      menuBtn=document.getElementById('menuBtn'),
+      overlay=document.getElementById('overlay');
+menuBtn.addEventListener('click',()=>{sidebar.classList.toggle('open');overlay.classList.toggle('show');});
+overlay.addEventListener('click',()=>{sidebar.classList.remove('open');overlay.classList.remove('show');});
+document.querySelectorAll('#sideNav a').forEach(a=>a.addEventListener('click',()=>{
+  sidebar.classList.remove('open');overlay.classList.remove('show');}));
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
+}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+const navLinks=document.querySelectorAll('#sideNav a');
+window.addEventListener('scroll',()=>{
+  let current='home';
+  document.querySelectorAll('main section[id]').forEach(s=>{
+    if(window.scrollY>=s.offsetTop-140)current=s.id;});
+  navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current));
+});
+
+const catFilter=document.getElementById('catFilter'),
+      catCount=document.getElementById('catCount'),
+      catRows=[...document.querySelectorAll('#catTable tbody tr')];
+catFilter.addEventListener('input',()=>{
+  const q=catFilter.value.trim().toLowerCase();let n=0;
+  catRows.forEach(r=>{
+    const hit=r.innerText.toLowerCase().includes(q);
+    r.style.display=hit?'':'none';if(hit)n++;});
+  catCount.textContent=n+' / '+catRows.length;
+});
+document.addEventListener('keydown',e=>{
+  const tag=document.activeElement.tagName;
+  if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(tag)){
+    e.preventDefault();catFilter.focus();}
+});
+
+catRows.forEach(tr=>{
+  tr.addEventListener('click',()=>{
+    const c=tr.cells[1].innerText.trim(),
+          p=tr.cells[2].innerText.trim(),
+          a=tr.cells[3].innerText.trim(),
+          i=tr.cells[4].innerText.trim();
+    const msg='Hello Exports Partner,\n\nI am interested in:\n'+
+      '• Product Category: '+c+'\n• Products: '+p+
+      '\n• Application: '+a+'\n• Industry: '+i+
+      '\n\nPlease share your best quotation & samples.';
+    window.open('https://wa.me/919869652350?text='+encodeURIComponent(msg),'_blank');
+  });
+});
+
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const name=document.getElementById('fName').value.trim();
+  const company=document.getElementById('fCompany').value.trim();
+  const country=document.getElementById('fCountry').value.trim();
+  const email=document.getElementById('fEmail').value.trim();
+  const phone=document.getElementById('fPhone').value.trim();
+  const products=document.getElementById('fProducts').value.trim();
+  const details=document.getElementById('fDetails').value.trim();
+
+  const msg='Hello Exports Partner,\n\nNew Inquiry Received:\n'+
+    '• Name: '+name+'\n• Company: '+(company||'—')+'\n• Country: '+country+
+    '\n• Email: '+email+'\n• WhatsApp/Mobile: '+phone+
+    '\n• Products: '+products+'\n• Details: '+(details||'—')+
+    '\n\nPlease share quotation & samples.';
+
+  // 1) WhatsApp alert to business number
+  window.open('https://wa.me/919869652350?text='+encodeURIComponent(msg),'_blank');
+
+  // 2) Email alert via mailto
+  const subject=encodeURIComponent('New Inquiry — '+name+' ('+country+')');
+  const body=encodeURIComponent(msg);
+  window.open('mailto:info@exportspartner.com?subject='+subject+'&body='+body,'_self');
+
+  // 3) SMS alert (opens SMS app on mobile with pre-filled text)
+  const smsBody=encodeURIComponent('New EP Inquiry: '+name+' | '+products+' | '+phone);
+  const smsLink=document.createElement('a');
+  smsLink.href='sms:+919869652350?body='+smsBody;
+  smsLink.style.display='none';
+  document.body.appendChild(smsLink);
+  try{smsLink.click();}catch(err){}
+  setTimeout(()=>smsLink.remove(),500);
+
+  document.getElementById('formMsg').style.display='block';
+  this.reset();
+  setTimeout(()=>{document.getElementById('formMsg').style.display='none';},8000);
+});
+</script>
+</body>
+</html>
